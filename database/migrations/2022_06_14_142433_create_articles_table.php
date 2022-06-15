@@ -17,7 +17,6 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedInteger('stock')->default(0);
-            $table->timestamps();
         });
     }
 

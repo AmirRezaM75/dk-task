@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "449d21c97777eebde6bee9fff07b3441",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -494,6 +494,63 @@
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
+            "name": "ellgreen/laravel-loadfile",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ellgreen/laravel-loadfile.git",
+                "reference": "b6c971eff0601fdd00f2a3213cb3ce89bc1dacc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ellgreen/laravel-loadfile/zipball/b6c971eff0601fdd00f2a3213cb3ce89bc1dacc4",
+                "reference": "b6c971eff0601fdd00f2a3213cb3ce89bc1dacc4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^9",
+                "squizlabs/php_codesniffer": "^3.6",
+                "vimeo/psalm": "^4.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "EllGreen\\LaravelLoadFile\\Laravel\\Providers\\LaravelLoadFileServiceProvider"
+                    ],
+                    "aliases": {
+                        "LoadFile": "EllGreen\\LaravelLoadFile\\Laravel\\Facades\\LoadFile"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EllGreen\\LaravelLoadFile\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ellis Green",
+                    "email": "devellisper@outlook.com"
+                }
+            ],
+            "description": "A package to help with loading files into MySQL tables",
+            "support": {
+                "issues": "https://github.com/ellgreen/laravel-loadfile/issues",
+                "source": "https://github.com/ellgreen/laravel-loadfile/tree/1.2.0"
+            },
+            "time": "2021-05-08T19:20:36+00:00"
+        },
+        {
             "name": "fruitcake/laravel-cors",
             "version": "v2.2.0",
             "source": {
@@ -956,6 +1013,64 @@
                 }
             ],
             "time": "2022-06-09T08:26:02+00:00"
+        },
+        {
+            "name": "halaxa/json-machine",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/halaxa/json-machine.git",
+                "reference": "b4086dfe72670df060d2bd481f01bc9e450a5640"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/halaxa/json-machine/zipball/b4086dfe72670df060d2bd481f01bc9e450a5640",
+                "reference": "b4086dfe72670df060d2bd481f01bc9e450a5640",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "suggest": {
+                "ext-json": "To run JSON Machine out of the box without custom decoders.",
+                "guzzlehttp/guzzle": "To run example with GuzzleHttp"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JsonMachine\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "src/autoloader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Halaxa",
+                    "email": "filip@halaxa.cz"
+                }
+            ],
+            "description": "Efficient, easy-to-use and fast JSON pull parser",
+            "support": {
+                "issues": "https://github.com/halaxa/json-machine/issues",
+                "source": "https://github.com/halaxa/json-machine/tree/1.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://ko-fi.com/G2G57KTE4",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-03-03T11:02:11+00:00"
         },
         {
             "name": "laravel/framework",

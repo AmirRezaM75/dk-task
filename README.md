@@ -1,3 +1,6 @@
+# Requirement
+- ext-json
+- You must have the FILE privilege
 # Assignment
 The assignment is to implement a warehouse software. This warehouse should hold articles,
 and the articles should contain an identification number, a name and a number showing
